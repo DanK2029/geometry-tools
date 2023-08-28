@@ -1,9 +1,7 @@
 #include <iostream>
 #include <fstream>
 
-#include "HalfEdgeMesh/HalfEdgeMesh.h"
-
-int main()
+int main(int argc, char **argv)
 {
-	HalfEdgeMesh *hem = new HalfEdgeMesh("C:/Users/dpk20/Dev/geometry-tools/res/obj/teddy.obj");
+	std::cout << "Running Geometry Main" << std::endl;
 }

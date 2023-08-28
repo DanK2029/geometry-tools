@@ -1,7 +1,11 @@
 .vscode/
+
 bin
 build
+third_party/
+
 **/CMakeFiles
 **/Makefile
-**/cmake_install.cmake
+**/*.cmake
 **/CMakeCache.txt
+**/*.a

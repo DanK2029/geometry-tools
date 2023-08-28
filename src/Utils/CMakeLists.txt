@@ -1,10 +1,12 @@
 add_library(
-	StringUtils
+	Utils
 	StringUtils.h
 )
 
+set_target_properties(Utils PROPERTIES LINKER_LANGUAGE CXX)
+
 target_include_directories(
-	StringUtils
+	Utils
 	PUBLIC
 	${CMAKE_CURRENT_SOURCE_DIR}
 )
