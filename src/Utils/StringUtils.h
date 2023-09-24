@@ -1,27 +1,12 @@
+#ifndef STRINGUTILS_H
+#define STRINGUTILS_H
+
 #include <string>
 #include <vector>
 
-std::vector<std::string> tokenizeString(std::string str, char splitter)
+namespace utils
 {
-	std::vector<std::string> tokens;
-	std::string current = "";
-	for (int i = 0; i < str.size(); i++)
-	{
-		if (str[i] == splitter)
-		{
-			if (current != "")
-			{
-				tokens.push_back(current);
-				current = "";
-			}
-			continue;
-		}
-		current += str[i];
-	}
-
-	if (current.size() != 0)
-	{
-		tokens.push_back(current);
-	}
-	return tokens;
+	std::vector<std::string> tokenizeString(std::string str, char splitter);
 }
+
+#endif
