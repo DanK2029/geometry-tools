@@ -2,7 +2,7 @@
 
 bin
 build
-third_party/
+third_party
 
 **/CMakeFiles
 **/Makefile
